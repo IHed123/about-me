@@ -1,0 +1,124 @@
+
+/*#E6E8E6 — light gray
+
+#CED0CE — soft gray
+
+#4A8CFF — electric blue
+
+#0D1F2D — deep navy
+
+#3F403F — dark gray
+
+Now let’s give each one a job.
+
+✔ Background (main page)
+#E6E8E6  
+Clean, bright, neutral. Perfect for your base.
+
+✔ Section background (cards, content blocks)
+#CED0CE  
+Just enough contrast to separate sections without looking heavy.
+
+✔ Primary accent (buttons, links, highlights)
+#4A8CFF  
+This is your “pop” color. Use it sparingly but intentionally.
+
+✔ Header / footer / navbar background
+#0D1F2D  
+This is your strongest color — perfect for anchoring the top of the page.
+
+✔ Text color
+#3F403F  
+Readable, modern, not harsh like pure black.
+ */
+
+
+
+body {
+    background-color: #E6E8E6;
+    font-family: 'Arial', sans-serif;
+    
+}
+.title {
+    position: fixed;
+    top: 2%;
+    right:50%;
+    font-size: 3em;
+    margin-top: 2%;
+    color: #4A8CFF; 
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.contacts {
+    position: fixed;
+    display:inline-block;
+    top: 2px;
+    right: 30px;
+    transition: 0.5s ease;
+    z-index: 5;
+    font-weight: very bold;
+}
+/*
+.pflink {
+    position:fixed;
+    top:23%;
+    left:1.5%;
+    transition: 0.5s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #CED0CE;
+    border-radius: 10px;
+}
+.pflink:hover {
+    color:#4A8CFF;
+    transform: scale(1.1);
+}
+.shoplink {
+    position:fixed;
+    top:30%;
+    left:1.5%;
+    transition: 0.5s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #CED0CE;
+    border-radius: 10px;
+}
+.shoplink:hover {
+    color:#4A8CFF;
+    transform: scale(1.1);
+}
+
+*/
+
+
+.roommessy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 1s ease, height 1s ease;
+}
+.roommessy:hover {
+   
+    height: 300px;
+}
+
+.contacts a {
+    transition: 0.5s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E6E8E6;
+    border-radius: 10px;
+}
+
+.contacts a:hover {
+    color :#4A8CFF;
+    transform: scale(1.02)
+    
+}
