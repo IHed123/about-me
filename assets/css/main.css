@@ -50,15 +50,7 @@ body {
     opacity: 1;
     transition: opacity 0.5s ease;
 }
-.contacts {
-    position: fixed;
-    display:inline-block;
-    top: 2px;
-    right: 30px;
-    transition: 0.5s ease;
-    z-index: 5;
-    font-weight: very bold;
-}
+
 /*
 .pflink {
     position:fixed;
@@ -109,16 +101,3 @@ body {
     height: 300px;
 }
 
-.contacts a {
-    transition: 0.5s ease;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #E6E8E6;
-    border-radius: 10px;
-}
-
-.contacts a:hover {
-    color :#4A8CFF;
-    transform: scale(1.02)
-    
-}
