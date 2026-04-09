@@ -5,11 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../assets/css/global.css">
-    <link rel="stylesheet" href="../../assets/css/services.css">
+    <link rel="stylesheet" href="../../assets/css/service.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <img class="lawnmowerimage" src="image.png" alt="Lawn Mowing picture">
+    <div class="page-container">
+    <div class="service">
+    <div class="details">
+        <button class="back-btn" onclick="history.back()">← Back</button>
+        <h1 id="productName">2A Motor Driver</h1>
+        <p class="productDescription">High-performance motor driver for 2A applications.</p>
+    </div>
+
+    <div class="sidebar">
+
+    <img id="mainImage" src="image.png" alt="lawn mowing">
+
+    <p id="productPrice">$9.99</p>
+
+    <div class="variants">
+        <button onclick="selectVariant('2a')">2A</button>
+        <button onclick="selectVariant('5a')">5A</button>
+        <button onclick="selectVariant('10a')">10A</button>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <script>
+const variants = {
+    "2a": {
+        name: "2A Motor Driver",
+        price: "$9.99",
+        image: "hbridgedriver.png"
+    },
+    "5a": {
+        name: "5A Motor Driver",
+        price: "$14.99",
+        image: "images/5a.png"
+    },
+    "10a": {
+        name: "10A Motor Driver",
+        price: "$19.99",
+        image: "images/10a.png"
+    }
+};
+
+function selectVariant(v) {
+    document.getElementById("productName").textContent = variants[v].name;
+    document.getElementById("productPrice").textContent = variants[v].price;
+    document.getElementById("mainImage").src = variants[v].image;
+}
+</script>
+
 </body>
 </html>

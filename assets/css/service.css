@@ -1,0 +1,25 @@
+.service {
+    display: flex;
+}
+.back-btn{
+    background: #CED0CE;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #3F403F;
+    padding: 0.5rem 1rem;
+}
+.variants {
+    display:inline-block;
+}
+.details {
+    flex: 2;
+}
+.sidebar {
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #CED0CE;
+    margin-right: 5rem;
+}
