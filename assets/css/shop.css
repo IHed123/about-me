@@ -1,6 +1,9 @@
 .page-layout {
     display:flex;
 }
+.navbar{
+    margin-top:2rem;
+}
 .product_container{
     display:flex;
     flex-direction: column;
@@ -19,7 +22,7 @@
 .product1:hover{
     background-color: #4A8CFF;
     transform-origin: left;
-    transform: scale(1.1);
+    transform: scale(1.02);
     transition: 0.5s ease;
 }
 .product_container img {
@@ -27,5 +30,5 @@
     height: auto;
     padding-left: 35rem;
     border-radius: 20px;
-
+    margin-left:auto;
 }

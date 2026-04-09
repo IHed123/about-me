@@ -22,7 +22,7 @@
 .service1:hover{
     background-color: #4A8CFF;
     transform-origin: left;
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: 0.5s ease;
 }
 .service_container img {

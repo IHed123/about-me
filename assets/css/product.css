@@ -1,6 +1,18 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #E6E8E6;
+.product {
+    display: flex;
+}
+
+.variants {
+    display:inline-block;
+}
+.details {
+    flex: 2;
+}
+.sidebar {
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #CED0CE;
+    margin-right: 5rem;
 }
