@@ -3,6 +3,12 @@ body {
     font-family: 'Arial', sans-serif;
     
 }
+.page-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
 
 .navbar {
     display:flex;
@@ -73,4 +79,33 @@ li a:hover {
   color: white;
 } 
 */
+@media (max-width: 800px) {
+    /* stack columns */
+    .product {
+        flex-direction: column;
+    }
+
+    /* center sidebar content */
+    .sidebar {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* make images scale */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* make cards vertical */
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* fix text sizes */
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+    p  { font-size: 1rem; }
+}
 
