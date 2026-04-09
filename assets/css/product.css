@@ -1,7 +1,14 @@
 .product {
     display: flex;
 }
-
+.back-btn{
+    background: #CED0CE;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #3F403F;
+    padding: 0.5rem 1rem;
+}
 .variants {
     display:inline-block;
 }
