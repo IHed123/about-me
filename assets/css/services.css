@@ -1,15 +1,19 @@
 .page-layout {
     display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
 }
 .navbar{
     margin-top:2rem;
 }
-.service_container{
+.services_container{
     display:flex;
     flex-direction: column;
     gap:30px;
     padding: 20px;
-    width:80%;
+    flex: 1;
+    min-width: 0;
 }
 
 .service1 {
@@ -25,10 +29,64 @@
     transform: scale(1.02);
     transition: 0.5s ease;
 }
-.service_container img {
+.services_container img {
     width: 20%;
     height: auto;
-    padding-left: 35rem;
     border-radius: 20px;
     margin-left:auto;
+}
+
+.sort_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 5;
+}
+.sort-btn {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background: #eee;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0;
+    top: 1rem;
+    left:0;
+}
+
+
+.sort-menu {
+    display: none;
+    position: absolute;
+    top:25rem;
+    left: 0;
+
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 10;
+    width: 250px;
+
+}
+
+
+.sort-menu h4 {
+    margin: 0.8rem 0 0.3rem;
+}
+.sort-menu button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+.sort-menu button:hover {
+    background: #f0f0f0;
 }
